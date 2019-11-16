@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>현질 계산기</title>
+  </head>
+  <style media="screen">
+    .gridMenu{
+      display:grid;
+      //grid-template-columns: 1fr 1fr;
+    }
+  </style>
+  <script type="text/javascript">
+    const w = 50; t = 3; c = 3450;
+
+    function changer (goods, scale) {
+      var standard = document.getElementById(goods).value;
+
+      if (scale != w)
+        document.getElementById('won').value = (standard * w/scale).toFixed(1);
+      if (scale != t)
+        document.getElementById('theonite').value = (standard * t/scale).toFixed(1);
+      if (scale != c)
+        document.getElementById('canopy').value = (standard * c/scale).toFixed(1);
+    }
+  </script>
+  <body>
+    <h1>현질 계산기</h1>
+    <div class="gridMenu">
+      <div class="items">
+        <span>교환비는 12만원 - 7200시오나이트, 1600시오나이트 - 184만 캐노피</span>
+      </div>
+      <div class="calculator">
+        <span>현금  </span><input type="number" id="won" value="120000" onkeyup="changer('won', w);"><br>
+        <span>시오나이트  </span><input type="number" id="theonite" value="7200" onkeyup="changer('theonite', t);"><br>
+        <span>캐노피  </span><input type="number" id="canopy" value="8280000" onkeyup="changer('canopy', c);"><br>
+      </div>
+    </div>
+  </body>
+</html>
