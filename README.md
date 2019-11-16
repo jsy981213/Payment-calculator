@@ -1,2 +1,2 @@
-# Hello-world
-THE AWESOME FIRST REPOSITORY helping me start GIT LIFE
+# Payment Calculator
+현질 계산기
