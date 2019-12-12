@@ -6,19 +6,21 @@
     <title>현질 계산기</title>
   </head>
   <style media="screen">
-    @font-face {
-      font-family: Dodam;
-      src: url (res\font\Typo_DodamM.ttf);
-    }
 
     @font-face {
-      font-family: 'Washington';
-      src: url(res\font\WashingtonBoldDynamic.otf);
+      font-family: "Washington";
+      src: url(res/font/WashingtonBoldDynamic.otf);
       font-display: swap;
     }
 
-    h1{
-      font-family: Dodam;
+    @font-face {
+      font-family: "Dodam";
+      src: url(res/font/Typo_DodamM.ttf);
+      font-display: swap;
+    }
+
+    h1 {
+      font-family: 'Dodam';
     }
 
   </style>
@@ -26,28 +28,25 @@
     const w = 50; t = 3; c = 3450;
   </script>
   <body>
-    <div class="titleTab">
+    <div class="headTab">
       <h1>현질 계산기</h1>
-      <div class="">
-
-      </div>
     </div>
     <div class="itmTab">
 
     </div>
     <div class="invTab">
-      <div class="">
+      <div class="invItm">
 
       </div>
-      <div class="">
+      <div class="invCurr">
 
       </div>
     </div>
-    <div class="resTab">
-      <div class="">
+    <div class="priTab">
+      <div class="actPri">
 
       </div>
-      <div class="">
+      <div class="selPri">
 
       </div>
     </div>
