@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-height, initial-scale=1.0">
     <title>현질 계산기</title>
   </head>
   <style media="screen">
@@ -19,8 +19,67 @@
       font-display: swap;
     }
 
+    body{
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr 5fr 5fr 2fr;
+      background: white;
+      font-family: 'Dodam', 'Washington';
+
+    }
+
+    .header{
+      background: radial-gradient(ellipse, #5659AD 20%, #080C54 80%) fixed;
+      margin:0;
+      border-bottom: 1px #CFC34E solid;
+    }
+
+    .itmTab{
+      position:relative;
+      background: red;
+    }
+
+    .invTab{
+      position:relative;
+      background: yellow;
+    }
+
+    .priTab{
+      display: grid;
+    }
+
+    .actPri{
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .prices{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    .icon {
+      height: 50%; width: auto;
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .res{
+      color: black;
+      border: none;
+      background: transparent;
+      margin: auto;
+      text-align: left;
+      font-family: 'Washington';
+      font-size: 200%
+    }
+
     h1 {
-      font-family: 'Dodam';
+      font-weight: normal;
+      color: #d5c632;
+      text-align: center;
     }
 
   </style>
@@ -28,7 +87,7 @@
     const w = 50; t = 3; c = 3450;
   </script>
   <body>
-    <div class="headTab">
+    <div class="header">
       <h1>현질 계산기</h1>
     </div>
     <div class="itmTab">
@@ -44,10 +103,9 @@
     </div>
     <div class="priTab">
       <div class="actPri">
-
-      </div>
-      <div class="selPri">
-
+        <div class= "prices"><img class="icon" src="res\img\CurrencyT.png"><input class="res" type="text" value="1,720,200" readonly/></div>
+        <div class= "prices"><img class="icon" src="res\img\CurrencyC.png"><input class="res" type="text" value="1,720,200" readonly/></div>
+        <div class= "prices"><img class="icon" src="res\img\CurrencyW.png" style="height: 40%"><input class="res" type="text" value="1,720,200" readonly/></div>
       </div>
     </div>
   </body>
