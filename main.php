@@ -128,6 +128,60 @@
           다이아 키
         </div>
       </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
+      <div class="itm">
+        <img class="itmImg" src="res\img\KeyD.png">
+        <div class="itmName">
+          다이아 키
+        </div>
+      </div>
 
       <?php
         $itmDat = fopen('res/data/item.txt', 'r');

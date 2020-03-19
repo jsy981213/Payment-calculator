@@ -1,2 +1,3 @@
-Boost,XP 부스트 4h,150,t
-Boost,XP 부스트 12h,300,t
+Boost,XP 부스트 4시간,150,t
+Boost,XP 부스트 12시간,300,t
+GachaC,캐릭터 유물,200,t
