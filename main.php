@@ -130,7 +130,7 @@
       </div>
 
       <?php
-        $itmDat = fopen('res/data/item.txt', r);
+        $itmDat = fopen('res/data/item.txt', 'r');
         while(!feof($itmDat)) {
           $itmArray = fgetcsv($itmDat, 1000, ",");
           echo '
