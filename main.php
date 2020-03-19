@@ -128,54 +128,21 @@
           다이아 키
         </div>
       </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
-      <div class="itm">
-        <img class="itmImg" src="res\img\KeyD.png">
-        <div class="itmName">
-          다이아 키
-        </div>
-      </div>
+
+      <?php
+        $itmDat = fopen('res/data/item.txt', r);
+        while(!feof($itmDat)) {
+          $itmArray = fgetcsv($itmDat, 1000, ",");
+          echo '
+            <div class="itm">
+              <img class="itmImg" src="res/img/'.$itmArray[0].'.png">
+              <div class="itmName">
+                '.$itmArray[1].'
+              </div>
+            </div>
+          ';
+        }
+       ?>
 
     </div>
     <div class="invTab">
