@@ -1,0 +1,2 @@
+Boost,XP 부스트 4h,150,t
+Boost,XP 부스트 12h,300,t
